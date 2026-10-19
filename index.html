@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f9dce6">
+
+    <title>A Little World Just for You ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Soft background decorations -->
+    <div class="ambient-glow glow-one" aria-hidden="true"></div>
+    <div class="ambient-glow glow-two" aria-hidden="true"></div>
+    <div class="ambient-glow glow-three" aria-hidden="true"></div>
+
+    <main class="site-shell" id="siteShell">
+
+        <!-- ============================= -->
+        <!-- MAIN GALLERY PAGE             -->
+        <!-- ============================= -->
+
+        <section
+            class="gallery-view"
+            id="galleryView"
+            aria-labelledby="pageTitle"
+        >
+
+            <div class="gallery-shell">
+
+                <header class="hero">
+
+                    <p class="hero-eyebrow">
+                        <span class="eyebrow-star">✦</span>
+                        A LITTLE SOMETHING, JUST FOR YOU
+                        <span class="eyebrow-star">✦</span>
+                    </p>
+
+                    <h1 id="pageTitle">
+                        A little world
+                        <span>made just for you.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A few memories, a little bit of magic,
+                        and lots of love — all wrapped up just for you.
+                    </p>
+
+                    <div class="hero-divider" aria-hidden="true">
+                        <span></span>
+                        <span class="divider-heart">♡</span>
+                        <span></span>
+                    </div>
+
+                    <p class="hero-instruction">
+                        Choose a little window into our memories.
+                    </p>
+
+                </header>
+
+                <!-- Memory cards are created by JavaScript -->
+                <div class="memory-grid" id="memoryGrid"></div>
+
+                <footer class="gallery-footer">
+                    <span>MADE WITH LOVE</span>
+                    <span class="footer-heart">♥</span>
+                    <span>JUST FOR YOU</span>
+                </footer>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- FULL MEMORY DETAIL VIEW       -->
+        <!-- ============================= -->
+
+        <section
+            class="detail-view"
+            id="detailView"
+            aria-hidden="true"
+            aria-labelledby="detailTitle"
+            tabindex="-1"
+        >
+
+            <!-- X button: return to the gallery -->
+            <button
+                type="button"
+                class="back-button"
+                id="backButton"
+                aria-label="Close memory and return to gallery"
+            >
+                <span class="back-cross" aria-hidden="true">×</span>
+                <span class="back-label">Back to memories</span>
+            </button>
+
+            <div class="detail-view-inner">
+
+                <!-- Left side: text -->
+                <div class="detail-copy">
+
+                    <p class="detail-eyebrow" id="detailEyebrow">
+                        A LITTLE MEMORY
+                    </p>
+
+                    <h2 id="detailTitle">
+                        A little moment to remember.
+                    </h2>
+
+                    <div
+                        class="detail-paragraphs"
+                        id="detailParagraphs"
+                    ></div>
+
+                    <div class="detail-signature">
+                        <span>With love, always</span>
+                        <span class="signature-heart">♡</span>
+                    </div>
+
+                </div>
+
+                <!-- Right side: image -->
+                <figure class="detail-visual">
+
+                    <div class="detail-image-frame">
+
+                        <div class="image-inner-glow"
+                             aria-hidden="true"></div>
+
+                        <img
+                            class="detail-image"
+                            id="detailImage"
+                            src=""
+                            alt=""
+                        >
+
+                        <div
+                            class="image-bottom-shine"
+                            aria-hidden="true"
+                        ></div>
+
+                    </div>
+
+                    <figcaption
+                        class="detail-caption"
+                        id="detailCaption"
+                    ></figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Announces navigation to screen readers -->
+    <p
+        class="visually-hidden"
+        id="liveRegion"
+        aria-live="polite"
+    ></p>
+
+</body>
+</html>
